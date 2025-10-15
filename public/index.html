@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Unidades</title>
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Unit Converter</h1>
+        <div class="tabs">
+            <button class="tab-link active" data-category="length">Length</button>
+            <button class="tab-link" data-category="weight">Weight</button>
+            <button class="tab-link" data-category="temperature">Temperature</button>
+        </div>
+
+        <form id="converter-form">
+            <div class="input-group">
+                <label for="value-input">Enter the value to convert</label>
+                <input type="number" id="value-input" required step="any">
+            </div>
+            <div class="input-group">
+                <label for="from-unit-select">Unit to Convert From</label>
+                <select id="from-unit-select"></select>
+            </div>
+            <div class="input-group">
+                <label for="to-unit-select">Unit to Convert To</label>
+                <select id="to-unit-select"></select>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+
+        <div id="result-container" class="hidden">
+            <h2>Result of your calculation</h2>
+            <p id="result-display"></p>
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
