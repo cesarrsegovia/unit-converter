@@ -63,5 +63,5 @@ function resetConverter() {
     resultContainer.classList.add('hidden');
 }
 
-// 7. Inicializamos la vistas
+// 7. Inicializamos la vistas adsasdss
 populateSelectors(currentCategory);
